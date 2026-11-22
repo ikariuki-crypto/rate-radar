@@ -1,0 +1,62 @@
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --accent: #22c55e;
+  --text: #f1f5f9;
+  --muted: #94a3b8;
+  --danger: #f87171;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.app { width: 100%; max-width: 640px; }
+
+h1 { margin: 0; font-size: 2rem; }
+.tagline { color: var(--muted); margin-top: 0.25rem; }
+
+form {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto auto;
+  gap: 0.5rem;
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+}
+
+input, select, button {
+  font: inherit;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: var(--bg);
+  color: var(--text);
+}
+
+button { cursor: pointer; }
+button[type="submit"] { background: var(--accent); color: #052e16; font-weight: 700; border: none; }
+
+.result { font-size: 1.5rem; font-weight: 700; min-height: 2rem; }
+.error { color: var(--danger); min-height: 1.5rem; }
+
+.history { margin-top: 2rem; }
+.history input { width: 100%; margin-bottom: 0.75rem; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 0.5rem; border-bottom: 1px solid #334155; }
+th[data-sort] { cursor: pointer; color: var(--accent); }
+
+@media (max-width: 520px) {
+  form { grid-template-columns: 1fr 1fr; }
+  button[type="submit"] { grid-column: 1 / -1; }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rate Radar – East Africa Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Rate Radar</h1>
+    <p class="tagline">Live exchange rates for East African travel</p>
+
+    <form id="convert-form">
+      <input type="number" id="amount" placeholder="Amount" min="0" step="any" required>
+      <select id="from"></select>
+      <button type="button" id="swap" title="Swap currencies">⇄</button>
+      <select id="to"></select>
+      <button type="submit">Convert</button>
+    </form>
+
+    <p id="result" class="result"></p>
+    <p id="error" class="error"></p>
+
+    <section class="history">
+      <h2>History</h2>
+      <input type="text" id="search" placeholder="Filter by currency (e.g. KES)">
+      <table>
+        <thead>
+          <tr>
+            <th data-sort="time">Time</th>
+            <th data-sort="amount">Amount</th>
+            <th>From → To</th>
+            <th data-sort="result">Result</th>
+          </tr>
+        </thead>
+        <tbody id="history-body"></tbody>
+      </table>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
