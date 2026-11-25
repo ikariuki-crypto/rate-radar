@@ -17,7 +17,7 @@ function fillSelects() {
   fromSelect.value = "USD";
   toSelect.value = "KES";
 }
-
+// Fetches rates for the base currency from the API
 async function getRate(from, to) {
   const response = await fetch(API + from, {cache: "no-store"});
   if (!response.ok) throw new Error("Rate service returned " + response.status);

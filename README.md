@@ -49,3 +49,4 @@ curl -sI 3.9.176.132/rate-radar/ | grep -i x-served-by   # 7320-web-02
 - Exchange rates: ExchangeRate-API (https://www.exchangerate-api.com)
 - Servers: ALU-provided Ubuntu 20.04 instances
 - Built by Isaack Muiruri Kariuki, African Leadership University.
+- Built with step-by-step guidance from an AI assistant (Claude) in a separate chat; all code typed, debugged and deployed by me.
