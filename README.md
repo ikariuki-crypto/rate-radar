@@ -3,7 +3,7 @@
 A live currency converter for East African travel. Convert between KES, RWF, UGX, TZS, USD, EUR and GBP using real-time exchange rates, keep a history of conversions, and filter or sort them.
 
 **Live app (via load balancer):** http://3.9.176.132/rate-radar
-**Demo video:** [LINK]
+**Demo video link: https://youtu.be/N0iuqamZCoA
 
 ## Why this app
 I'm a Kenyan student in Kigali, and every trip home crosses Rwanda, Uganda and Kenya, three currencies in a day and a half. Prices at borders and bus stations are quoted in whichever currency suits the seller, so I wanted a quick, honest converter that works on a phone and remembers what I've already checked.
